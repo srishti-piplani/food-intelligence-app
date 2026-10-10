@@ -1,0 +1,57 @@
+{
+  "retrieved_on": "2026-10-10",
+  "sources": [
+    {
+      "data_type": "SR Legacy",
+      "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_json_2018-04.zip",
+      "json_key": "SRLegacyFoods",
+      "archive_sha256": "0fe8ae486a2c8eb42cb96413f058deb51863a46c8fb8eeb4b1fb45006dd338ef",
+      "fdc_ids": [
+        172448,
+        172449,
+        168410,
+        168411,
+        172421,
+        173757,
+        173800,
+        168878,
+        169704,
+        169705,
+        173904,
+        173905,
+        171284,
+        170886,
+        170894,
+        171304,
+        168917,
+        173735,
+        168462,
+        168463,
+        170379,
+        173944,
+        167793,
+        171705,
+        171287,
+        168483,
+        171267,
+        171413,
+        170393,
+        170457
+      ]
+    },
+    {
+      "data_type": "Branded",
+      "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_branded_food_json_2026-04-30.zip",
+      "json_key": "BrandedFoods",
+      "archive_sha256": "57b0f122e61cf2840f03c11e9520275d0d2018dc036e16273fcd3cd370db2256",
+      "fdc_ids": [
+        1118973,
+        349454,
+        398589,
+        542499,
+        578760,
+        1851216
+      ]
+    }
+  ]
+}

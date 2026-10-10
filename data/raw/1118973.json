@@ -1,0 +1,347 @@
+{
+  "foodClass": "Branded",
+  "description": "NIGARI AUTHENTIC JAPANESE TOFU, NIGARI",
+  "foodNutrients": [
+    {
+      "type": "FoodNutrient",
+      "id": 13739362,
+      "nutrient": {
+        "id": 1003,
+        "number": "203",
+        "name": "Protein",
+        "rank": 600,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCS",
+        "description": "Calculated from value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 7.06
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 13739363,
+      "nutrient": {
+        "id": 1004,
+        "number": "204",
+        "name": "Total lipid (fat)",
+        "rank": 800,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCS",
+        "description": "Calculated from value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 2.94
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 13739364,
+      "nutrient": {
+        "id": 1005,
+        "number": "205",
+        "name": "Carbohydrate, by difference",
+        "rank": 1110,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCS",
+        "description": "Calculated from value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 2.35
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 13739365,
+      "nutrient": {
+        "id": 1008,
+        "number": "208",
+        "name": "Energy",
+        "rank": 300,
+        "unitName": "kcal"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCS",
+        "description": "Calculated from value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 59.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 13739366,
+      "nutrient": {
+        "id": 1087,
+        "number": "301",
+        "name": "Calcium, Ca",
+        "rank": 5300,
+        "unitName": "mg"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 24.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 13739367,
+      "nutrient": {
+        "id": 1089,
+        "number": "303",
+        "name": "Iron, Fe",
+        "rank": 5400,
+        "unitName": "mg"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.85
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 13739368,
+      "nutrient": {
+        "id": 1093,
+        "number": "307",
+        "name": "Sodium, Na",
+        "rank": 5800,
+        "unitName": "mg"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCS",
+        "description": "Calculated from value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 53.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 13739369,
+      "nutrient": {
+        "id": 1104,
+        "number": "318",
+        "name": "Vitamin A, IU",
+        "rank": 7500,
+        "unitName": "IU"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 13739370,
+      "nutrient": {
+        "id": 1162,
+        "number": "401",
+        "name": "Vitamin C, total ascorbic acid",
+        "rank": 6300,
+        "unitName": "mg"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 13739371,
+      "nutrient": {
+        "id": 1253,
+        "number": "601",
+        "name": "Cholesterol",
+        "rank": 15700,
+        "unitName": "mg"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 13739372,
+      "nutrient": {
+        "id": 1257,
+        "number": "605",
+        "name": "Fatty acids, total trans",
+        "rank": 15400,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCS",
+        "description": "Calculated from value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 13739373,
+      "nutrient": {
+        "id": 1258,
+        "number": "606",
+        "name": "Fatty acids, total saturated",
+        "rank": 9700,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.0
+    }
+  ],
+  "foodAttributes": [
+    {
+      "id": 1026949,
+      "name": "Description",
+      "value": "2",
+      "foodAttributeType": {
+        "id": 998,
+        "name": "Update Log",
+        "description": "Changes that were made to this food"
+      }
+    }
+  ],
+  "modifiedDate": "9/14/2020",
+  "availableDate": "9/14/2020",
+  "marketCountry": "United States",
+  "brandOwner": "PACIFIC NUTRITIONAL FOODS, INC.",
+  "gtinUpc": "085696605071",
+  "dataSource": "LI",
+  "ingredients": "FILTERED WATER, ORGANIC SOYBEANS, ORGANIC SOY PROTEIN, NIGARI*(MAGNESIUM CHLORIDE), SODIUM CITRATE, SODIUM CHLORIDE",
+  "servingSize": 85,
+  "servingSizeUnit": "g",
+  "householdServingFullText": "3 ONZ",
+  "labelNutrients": {
+    "fat": {
+      "value": 2.5
+    },
+    "saturatedFat": {
+      "value": 0.0
+    },
+    "transFat": {
+      "value": 0.0
+    },
+    "cholesterol": {
+      "value": 0.0
+    },
+    "sodium": {
+      "value": 45.0
+    },
+    "carbohydrates": {
+      "value": 2.0
+    },
+    "protein": {
+      "value": 6.0
+    },
+    "calcium": {
+      "value": 20.4
+    },
+    "iron": {
+      "value": 0.722
+    },
+    "calories": {
+      "value": 50.2
+    }
+  },
+  "tradeChannels": [
+    "NO_TRADE_CHANNEL"
+  ],
+  "microbes": [],
+  "brandedFoodCategory": "Other Meats",
+  "fdcId": 1118973,
+  "dataType": "Branded",
+  "publicationDate": "11/13/2020",
+  "foodUpdateLog": [
+    {
+      "foodClass": "Branded",
+      "description": "NIGARI AUTHENTIC JAPANESE TOFU, NIGARI",
+      "foodAttributes": [
+        {
+          "id": 1026949,
+          "name": "Description",
+          "value": "2",
+          "foodAttributeType": {
+            "id": 998
+          }
+        }
+      ],
+      "fdcId": 1118973,
+      "dataType": "Branded",
+      "publicationDate": "11/13/2020"
+    },
+    {
+      "foodClass": "Branded",
+      "description": "AUTHENTIC JAPANESE TOFU NIGARI",
+      "foodAttributes": [],
+      "fdcId": 562256,
+      "dataType": "Branded",
+      "publicationDate": "4/1/2019"
+    }
+  ]
+}

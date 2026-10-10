@@ -1,0 +1,1120 @@
+{
+  "foodClass": "FinalFood",
+  "description": "Apples, raw, fuji, with skin (Includes foods for USDA's Food Distribution Program)",
+  "foodNutrients": [
+    {
+      "type": "FoodNutrient",
+      "id": 1305080,
+      "nutrient": {
+        "id": 1257,
+        "number": "605",
+        "name": "Fatty acids, total trans",
+        "rank": 15400,
+        "unitName": "g"
+      },
+      "dataPoints": 0,
+      "foodNutrientDerivation": {
+        "code": "Z",
+        "description": "Assumed zero (Insignificant amount or not naturally occurring in a food, such as fiber in meat)",
+        "foodNutrientSource": {
+          "id": 5,
+          "code": "7",
+          "description": "Assumed zero"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305081,
+      "nutrient": {
+        "id": 1003,
+        "number": "203",
+        "name": "Protein",
+        "rank": 600,
+        "unitName": "g"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.22,
+      "min": 0.17,
+      "amount": 0.2
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305082,
+      "nutrient": {
+        "id": 1007,
+        "number": "207",
+        "name": "Ash",
+        "rank": 1000,
+        "unitName": "g"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.34,
+      "min": 0.15,
+      "amount": 0.24
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305083,
+      "nutrient": {
+        "id": 1009,
+        "number": "209",
+        "name": "Starch",
+        "rank": 2200,
+        "unitName": "g"
+      },
+      "dataPoints": 2,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.05,
+      "min": 0.05,
+      "amount": 0.05
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305084,
+      "nutrient": {
+        "id": 1012,
+        "number": "212",
+        "name": "Fructose",
+        "rank": 1800,
+        "unitName": "g"
+      },
+      "dataPoints": 3,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 6.55,
+      "min": 6.37,
+      "amount": 6.47
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305085,
+      "nutrient": {
+        "id": 1013,
+        "number": "213",
+        "name": "Lactose",
+        "rank": 1900,
+        "unitName": "g"
+      },
+      "dataPoints": 3,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.0,
+      "min": 0.0,
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305086,
+      "nutrient": {
+        "id": 1062,
+        "number": "268",
+        "name": "Energy",
+        "rank": 400,
+        "unitName": "kJ"
+      },
+      "dataPoints": 0,
+      "foodNutrientDerivation": {
+        "code": "NC",
+        "description": "Calculated",
+        "foodNutrientSource": {
+          "id": 2,
+          "code": "4",
+          "description": "Calculated or imputed"
+        }
+      },
+      "amount": 265
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305087,
+      "nutrient": {
+        "id": 1075,
+        "number": "287",
+        "name": "Galactose",
+        "rank": 2100,
+        "unitName": "g"
+      },
+      "dataPoints": 3,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.0,
+      "min": 0.0,
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305088,
+      "nutrient": {
+        "id": 1079,
+        "number": "291",
+        "name": "Fiber, total dietary",
+        "rank": 1200,
+        "unitName": "g"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 2.8,
+      "min": 1.7,
+      "amount": 2.1
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305089,
+      "nutrient": {
+        "id": 1089,
+        "number": "303",
+        "name": "Iron, Fe",
+        "rank": 5400,
+        "unitName": "mg"
+      },
+      "dataPoints": 2,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.11,
+      "min": 0.1,
+      "amount": 0.1
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305090,
+      "nutrient": {
+        "id": 1090,
+        "number": "304",
+        "name": "Magnesium, Mg",
+        "rank": 5500,
+        "unitName": "mg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 5.0,
+      "min": 5.0,
+      "amount": 5.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305091,
+      "nutrient": {
+        "id": 1091,
+        "number": "305",
+        "name": "Phosphorus, P",
+        "rank": 5600,
+        "unitName": "mg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 13.0,
+      "min": 11.0,
+      "amount": 13.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305092,
+      "nutrient": {
+        "id": 1093,
+        "number": "307",
+        "name": "Sodium, Na",
+        "rank": 5800,
+        "unitName": "mg"
+      },
+      "dataPoints": 0,
+      "foodNutrientDerivation": {
+        "code": "BFZN",
+        "description": "Based on another form of the food or similar food; Concentration adjustment; No adjustment; Retention factors not used",
+        "foodNutrientSource": {
+          "id": 2,
+          "code": "4",
+          "description": "Calculated or imputed"
+        }
+      },
+      "amount": 1.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305093,
+      "nutrient": {
+        "id": 1098,
+        "number": "312",
+        "name": "Copper, Cu",
+        "rank": 6000,
+        "unitName": "mg"
+      },
+      "dataPoints": 2,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.029,
+      "min": 0.021,
+      "amount": 0.025
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305094,
+      "nutrient": {
+        "id": 1101,
+        "number": "315",
+        "name": "Manganese, Mn",
+        "rank": 6100,
+        "unitName": "mg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.037,
+      "min": 0.026,
+      "amount": 0.031
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305095,
+      "nutrient": {
+        "id": 1104,
+        "number": "318",
+        "name": "Vitamin A, IU",
+        "rank": 7500,
+        "unitName": "IU"
+      },
+      "dataPoints": 1,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "amount": 38.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305096,
+      "nutrient": {
+        "id": 1106,
+        "number": "320",
+        "name": "Vitamin A, RAE",
+        "rank": 7420,
+        "unitName": "µg"
+      },
+      "dataPoints": 1,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "amount": 2.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305097,
+      "nutrient": {
+        "id": 1107,
+        "number": "321",
+        "name": "Carotene, beta",
+        "rank": 7440,
+        "unitName": "µg"
+      },
+      "dataPoints": 1,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "amount": 17.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305098,
+      "nutrient": {
+        "id": 1108,
+        "number": "322",
+        "name": "Carotene, alpha",
+        "rank": 7450,
+        "unitName": "µg"
+      },
+      "dataPoints": 1,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305099,
+      "nutrient": {
+        "id": 1120,
+        "number": "334",
+        "name": "Cryptoxanthin, beta",
+        "rank": 7460,
+        "unitName": "µg"
+      },
+      "dataPoints": 1,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "amount": 11.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305100,
+      "nutrient": {
+        "id": 1122,
+        "number": "337",
+        "name": "Lycopene",
+        "rank": 7530,
+        "unitName": "µg"
+      },
+      "dataPoints": 1,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305101,
+      "nutrient": {
+        "id": 1165,
+        "number": "404",
+        "name": "Thiamin",
+        "rank": 6400,
+        "unitName": "mg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.019,
+      "min": 0.007,
+      "amount": 0.013
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305102,
+      "nutrient": {
+        "id": 1166,
+        "number": "405",
+        "name": "Riboflavin",
+        "rank": 6500,
+        "unitName": "mg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.035,
+      "min": 0.015,
+      "amount": 0.026
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305103,
+      "nutrient": {
+        "id": 1177,
+        "number": "417",
+        "name": "Folate, total",
+        "rank": 6900,
+        "unitName": "µg"
+      },
+      "dataPoints": 0,
+      "foodNutrientDerivation": {
+        "code": "BFZN",
+        "description": "Based on another form of the food or similar food; Concentration adjustment; No adjustment; Retention factors not used",
+        "foodNutrientSource": {
+          "id": 2,
+          "code": "4",
+          "description": "Calculated or imputed"
+        }
+      },
+      "amount": 3.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305104,
+      "nutrient": {
+        "id": 1184,
+        "number": "429",
+        "name": "Vitamin K (Dihydrophylloquinone)",
+        "rank": 8900,
+        "unitName": "µg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.0,
+      "min": 0.0,
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305105,
+      "nutrient": {
+        "id": 1185,
+        "number": "430",
+        "name": "Vitamin K (phylloquinone)",
+        "rank": 8800,
+        "unitName": "µg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 1.1,
+      "min": 0.9,
+      "amount": 1.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305106,
+      "nutrient": {
+        "id": 1187,
+        "number": "432",
+        "name": "Folate, food",
+        "rank": 7100,
+        "unitName": "µg"
+      },
+      "dataPoints": 0,
+      "foodNutrientDerivation": {
+        "code": "BFZN",
+        "description": "Based on another form of the food or similar food; Concentration adjustment; No adjustment; Retention factors not used",
+        "foodNutrientSource": {
+          "id": 2,
+          "code": "4",
+          "description": "Calculated or imputed"
+        }
+      },
+      "amount": 3.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305107,
+      "nutrient": {
+        "id": 1004,
+        "number": "204",
+        "name": "Total lipid (fat)",
+        "rank": 800,
+        "unitName": "g"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.27,
+      "min": 0.07,
+      "amount": 0.18
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305108,
+      "nutrient": {
+        "id": 1005,
+        "number": "205",
+        "name": "Carbohydrate, by difference",
+        "rank": 1110,
+        "unitName": "g"
+      },
+      "dataPoints": 0,
+      "foodNutrientDerivation": {
+        "code": "NC",
+        "description": "Calculated",
+        "foodNutrientSource": {
+          "id": 2,
+          "code": "4",
+          "description": "Calculated or imputed"
+        }
+      },
+      "amount": 15.2
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305109,
+      "nutrient": {
+        "id": 1008,
+        "number": "208",
+        "name": "Energy",
+        "rank": 300,
+        "unitName": "kcal"
+      },
+      "dataPoints": 0,
+      "foodNutrientDerivation": {
+        "code": "NC",
+        "description": "Calculated",
+        "foodNutrientSource": {
+          "id": 2,
+          "code": "4",
+          "description": "Calculated or imputed"
+        }
+      },
+      "amount": 63.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305110,
+      "nutrient": {
+        "id": 1010,
+        "number": "210",
+        "name": "Sucrose",
+        "rank": 1600,
+        "unitName": "g"
+      },
+      "dataPoints": 3,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 2.67,
+      "min": 1.35,
+      "amount": 2.21
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305111,
+      "nutrient": {
+        "id": 1011,
+        "number": "211",
+        "name": "Glucose",
+        "rank": 1700,
+        "unitName": "g"
+      },
+      "dataPoints": 3,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 3.66,
+      "min": 2.55,
+      "amount": 3.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305112,
+      "nutrient": {
+        "id": 1014,
+        "number": "214",
+        "name": "Maltose",
+        "rank": 2000,
+        "unitName": "g"
+      },
+      "dataPoints": 3,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.0,
+      "min": 0.0,
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305113,
+      "nutrient": {
+        "id": 1051,
+        "number": "255",
+        "name": "Water",
+        "rank": 100,
+        "unitName": "g"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 85.7,
+      "min": 83.6,
+      "amount": 84.2
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305114,
+      "nutrient": {
+        "id": 2000,
+        "number": "269",
+        "name": "Total Sugars",
+        "rank": 1510,
+        "unitName": "g"
+      },
+      "dataPoints": 3,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 12.0,
+      "min": 11.5,
+      "amount": 11.7
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305115,
+      "nutrient": {
+        "id": 1087,
+        "number": "301",
+        "name": "Calcium, Ca",
+        "rank": 5300,
+        "unitName": "mg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 8.0,
+      "min": 6.0,
+      "amount": 7.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305116,
+      "nutrient": {
+        "id": 1092,
+        "number": "306",
+        "name": "Potassium, K",
+        "rank": 5700,
+        "unitName": "mg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 126,
+      "min": 90.0,
+      "amount": 109
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305117,
+      "nutrient": {
+        "id": 1095,
+        "number": "309",
+        "name": "Zinc, Zn",
+        "rank": 5900,
+        "unitName": "mg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.08,
+      "min": 0.03,
+      "amount": 0.04
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305118,
+      "nutrient": {
+        "id": 1103,
+        "number": "317",
+        "name": "Selenium, Se",
+        "rank": 6200,
+        "unitName": "µg"
+      },
+      "dataPoints": 3,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.0,
+      "min": 0.0,
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305119,
+      "nutrient": {
+        "id": 1109,
+        "number": "323",
+        "name": "Vitamin E (alpha-tocopherol)",
+        "rank": 7905,
+        "unitName": "mg"
+      },
+      "dataPoints": 0,
+      "foodNutrientDerivation": {
+        "code": "BFZN",
+        "description": "Based on another form of the food or similar food; Concentration adjustment; No adjustment; Retention factors not used",
+        "foodNutrientSource": {
+          "id": 2,
+          "code": "4",
+          "description": "Calculated or imputed"
+        }
+      },
+      "amount": 0.18
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305120,
+      "nutrient": {
+        "id": 1123,
+        "number": "338",
+        "name": "Lutein + zeaxanthin",
+        "rank": 7560,
+        "unitName": "µg"
+      },
+      "dataPoints": 1,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "amount": 11.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305121,
+      "nutrient": {
+        "id": 1167,
+        "number": "406",
+        "name": "Niacin",
+        "rank": 6600,
+        "unitName": "mg"
+      },
+      "dataPoints": 2,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.07,
+      "min": 0.07,
+      "amount": 0.07
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305122,
+      "nutrient": {
+        "id": 1170,
+        "number": "410",
+        "name": "Pantothenic acid",
+        "rank": 6700,
+        "unitName": "mg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.076,
+      "min": 0.03,
+      "amount": 0.051
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305123,
+      "nutrient": {
+        "id": 1175,
+        "number": "415",
+        "name": "Vitamin B-6",
+        "rank": 6800,
+        "unitName": "mg"
+      },
+      "dataPoints": 4,
+      "foodNutrientDerivation": {
+        "code": "A",
+        "description": "Analytical",
+        "foodNutrientSource": {
+          "id": 1,
+          "code": "1",
+          "description": "Analytical or derived from analytical"
+        }
+      },
+      "max": 0.055,
+      "min": 0.037,
+      "amount": 0.045
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 1305124,
+      "nutrient": {
+        "id": 1180,
+        "number": "421",
+        "name": "Choline, total",
+        "rank": 7220,
+        "unitName": "mg"
+      },
+      "dataPoints": 0,
+      "foodNutrientDerivation": {
+        "code": "BFZN",
+        "description": "Based on another form of the food or similar food; Concentration adjustment; No adjustment; Retention factors not used",
+        "foodNutrientSource": {
+          "id": 2,
+          "code": "4",
+          "description": "Calculated or imputed"
+        }
+      },
+      "amount": 3.4
+    }
+  ],
+  "scientificName": "Malus domestica",
+  "foodAttributes": [],
+  "nutrientConversionFactors": [],
+  "isHistoricalReference": false,
+  "ndbNumber": 9504,
+  "fdcId": 167793,
+  "dataType": "SR Legacy",
+  "foodCategory": {
+    "description": "Fruits and Fruit Juices"
+  },
+  "foodPortions": [
+    {
+      "id": 81987,
+      "value": 1.0,
+      "measureUnit": {
+        "id": 9999,
+        "name": "undetermined",
+        "abbreviation": "undetermined"
+      },
+      "modifier": "large",
+      "gramWeight": 236.0,
+      "sequenceNumber": 2,
+      "amount": 1.0
+    },
+    {
+      "id": 81988,
+      "value": 1.0,
+      "measureUnit": {
+        "id": 9999,
+        "name": "undetermined",
+        "abbreviation": "undetermined"
+      },
+      "modifier": "medium",
+      "gramWeight": 192.0,
+      "sequenceNumber": 3,
+      "amount": 1.0
+    },
+    {
+      "id": 81989,
+      "value": 1.0,
+      "measureUnit": {
+        "id": 9999,
+        "name": "undetermined",
+        "abbreviation": "undetermined"
+      },
+      "modifier": "small",
+      "gramWeight": 158.0,
+      "sequenceNumber": 4,
+      "amount": 1.0
+    },
+    {
+      "id": 81986,
+      "value": 1.0,
+      "measureUnit": {
+        "id": 9999,
+        "name": "undetermined",
+        "abbreviation": "undetermined"
+      },
+      "modifier": "cup, sliced",
+      "gramWeight": 109.0,
+      "sequenceNumber": 1,
+      "amount": 1.0
+    }
+  ],
+  "publicationDate": "4/1/2019",
+  "inputFoods": []
+}

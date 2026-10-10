@@ -1,0 +1,391 @@
+{
+  "foodClass": "Branded",
+  "description": "WSHBRN MILLS CHICKPEA ROTINI PASTA W LENTILS",
+  "foodNutrients": [
+    {
+      "type": "FoodNutrient",
+      "id": 2878303,
+      "nutrient": {
+        "id": 1087,
+        "number": "301",
+        "name": "Calcium, Ca",
+        "rank": 5300,
+        "unitName": "mg"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 36.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 2878304,
+      "nutrient": {
+        "id": 1089,
+        "number": "303",
+        "name": "Iron, Fe",
+        "rank": 5400,
+        "unitName": "mg"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 4.82
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 2878305,
+      "nutrient": {
+        "id": 1093,
+        "number": "307",
+        "name": "Sodium, Na",
+        "rank": 5800,
+        "unitName": "mg"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 2878306,
+      "nutrient": {
+        "id": 1104,
+        "number": "318",
+        "name": "Vitamin A, IU",
+        "rank": 7500,
+        "unitName": "IU"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 2878307,
+      "nutrient": {
+        "id": 1162,
+        "number": "401",
+        "name": "Vitamin C, total ascorbic acid",
+        "rank": 6300,
+        "unitName": "mg"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 2878308,
+      "nutrient": {
+        "id": 1253,
+        "number": "601",
+        "name": "Cholesterol",
+        "rank": 15700,
+        "unitName": "mg"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCCD",
+        "description": "Calculated from a daily value percentage per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 6282025,
+      "nutrient": {
+        "id": 1003,
+        "number": "203",
+        "name": "Protein",
+        "rank": 600,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCSA",
+        "description": "Calculated from an approximate value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 21.4
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 6282026,
+      "nutrient": {
+        "id": 1004,
+        "number": "204",
+        "name": "Total lipid (fat)",
+        "rank": 800,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCSA",
+        "description": "Calculated from an approximate value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 7.14
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 6282027,
+      "nutrient": {
+        "id": 1005,
+        "number": "205",
+        "name": "Carbohydrate, by difference",
+        "rank": 1110,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCSA",
+        "description": "Calculated from an approximate value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 58.9
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 6282028,
+      "nutrient": {
+        "id": 1008,
+        "number": "208",
+        "name": "Energy",
+        "rank": 300,
+        "unitName": "kcal"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCSA",
+        "description": "Calculated from an approximate value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 357
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 6282029,
+      "nutrient": {
+        "id": 2000,
+        "number": "269",
+        "name": "Total Sugars",
+        "rank": 1510,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCSA",
+        "description": "Calculated from an approximate value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 3.57
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 6282030,
+      "nutrient": {
+        "id": 1079,
+        "number": "291",
+        "name": "Fiber, total dietary",
+        "rank": 1200,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCSA",
+        "description": "Calculated from an approximate value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 17.9
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 6282031,
+      "nutrient": {
+        "id": 1092,
+        "number": "306",
+        "name": "Potassium, K",
+        "rank": 5700,
+        "unitName": "mg"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCSA",
+        "description": "Calculated from an approximate value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 1050.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 6282032,
+      "nutrient": {
+        "id": 1257,
+        "number": "605",
+        "name": "Fatty acids, total trans",
+        "rank": 15400,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCSA",
+        "description": "Calculated from an approximate value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.0
+    },
+    {
+      "type": "FoodNutrient",
+      "id": 6282033,
+      "nutrient": {
+        "id": 1258,
+        "number": "606",
+        "name": "Fatty acids, total saturated",
+        "rank": 9700,
+        "unitName": "g"
+      },
+      "foodNutrientDerivation": {
+        "code": "LCSA",
+        "description": "Calculated from an approximate value per serving size measure",
+        "foodNutrientSource": {
+          "id": 9,
+          "code": "12",
+          "description": "Manufacturer's analytical; partial documentation"
+        }
+      },
+      "amount": 0.89
+    }
+  ],
+  "foodAttributes": [],
+  "modifiedDate": "10/10/2017",
+  "availableDate": "10/10/2017",
+  "marketCountry": "United States",
+  "brandOwner": "GENERAL MILLS SALES INC.",
+  "gtinUpc": "00016000477995",
+  "dataSource": "GDSN",
+  "ingredients": "CHICKPEA FLOUR, GREEN LENTIL FLOUR.",
+  "servingSize": 56,
+  "servingSizeUnit": "g",
+  "householdServingFullText": "3/4 cup (56g)",
+  "labelNutrients": {
+    "fat": {
+      "value": 4.0
+    },
+    "saturatedFat": {
+      "value": 0.498
+    },
+    "transFat": {
+      "value": 0.0
+    },
+    "cholesterol": {
+      "value": 0.0
+    },
+    "sodium": {
+      "value": 0.0
+    },
+    "carbohydrates": {
+      "value": 33.0
+    },
+    "fiber": {
+      "value": 10.0
+    },
+    "sugars": {
+      "value": 2.0
+    },
+    "protein": {
+      "value": 12.0
+    },
+    "calcium": {
+      "value": 20.2
+    },
+    "iron": {
+      "value": 2.7
+    },
+    "potassium": {
+      "value": 588
+    },
+    "calories": {
+      "value": 200
+    }
+  },
+  "tradeChannels": [
+    "NO_TRADE_CHANNEL"
+  ],
+  "microbes": [],
+  "brandedFoodCategory": "Dough Based Products / Meals - Not Ready to Eat - Savoury (Shelf Stable)",
+  "fdcId": 349454,
+  "dataType": "Branded",
+  "publicationDate": "4/1/2019",
+  "foodUpdateLog": [
+    {
+      "foodClass": "Branded",
+      "description": "WSHBRN MILLS CHICKPEA ROTINI PASTA W LENTILS",
+      "foodAttributes": [],
+      "fdcId": 349454,
+      "dataType": "Branded",
+      "publicationDate": "4/1/2019"
+    }
+  ]
+}
