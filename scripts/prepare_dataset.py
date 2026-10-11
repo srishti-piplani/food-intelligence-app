@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 import pandas as pd
-from cece.data_access import normalize_record, validate_foods
+from cece.data_access import ALL_NUTRIENTS, normalize_record, validate_foods
 
 
 def sha256(path: Path) -> str:
@@ -75,16 +75,17 @@ def prepare(data_dir: Path, archive_dir: Path | None = None) -> None:
     csv_path = data_dir / "foods.csv"
     frame.to_csv(csv_path, index=False, lineterminator="\n")
     manifest = {
-        "schema_version": 1,
+        "schema_version": 2,
         "source": "USDA FoodData Central",
         "retrieval_date": selection["retrieved_on"],
         "record_count": len(frame),
         "data_type_counts": frame.data_type.value_counts().sort_index().to_dict(),
         "sha256": sha256(csv_path),
         "selection_sha256": sha256(data_dir / "selection.json"),
-        "basis": "per 100 g; calories in kcal; other nutrients in g",
-        "nutrient_ids": {"calories_kcal": 1008, "protein_g": 1003, "carbohydrates_g": 1005, "fat_g": 1004, "fiber_g": 1079},
-        "missing_counts": {name: int(frame[f"{name}_missing"].sum()) for name in ("calories_kcal", "protein_g", "carbohydrates_g", "fat_g", "fiber_g")},
+        "basis": "per 100 g; calories in kcal; sodium/cholesterol in mg; other nutrients in g",
+        "nutrient_ids": {name: info[0] for name, info in ALL_NUTRIENTS.items()},
+        "nutrient_units": {name: info[1] for name, info in ALL_NUTRIENTS.items()},
+        "missing_counts": {name: int(frame[f"{name}_missing"].sum()) for name in ALL_NUTRIENTS},
         "sources": selection["sources"],
         "raw_sha256": {str(row["fdc_id"]): row["raw_sha256"] for row in rows},
         "limitations": [

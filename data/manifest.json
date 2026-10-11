@@ -1,5 +1,5 @@
 {
-  "basis": "per 100 g; calories in kcal; other nutrients in g",
+  "basis": "per 100 g; calories in kcal; sodium/cholesterol in mg; other nutrients in g",
   "data_type_counts": {
     "Branded": 6,
     "SR Legacy": 30
@@ -11,18 +11,43 @@
     "Gram-unit branded records only; volume-unit products are excluded."
   ],
   "missing_counts": {
+    "added_sugars_g": 36,
     "calories_kcal": 0,
     "carbohydrates_g": 0,
+    "cholesterol_mg": 2,
     "fat_g": 0,
     "fiber_g": 1,
-    "protein_g": 0
+    "protein_g": 0,
+    "saturated_fat_g": 2,
+    "sodium_mg": 0,
+    "total_sugars_g": 2,
+    "trans_fat_g": 7
   },
   "nutrient_ids": {
+    "added_sugars_g": 1235,
     "calories_kcal": 1008,
     "carbohydrates_g": 1005,
+    "cholesterol_mg": 1253,
     "fat_g": 1004,
     "fiber_g": 1079,
-    "protein_g": 1003
+    "protein_g": 1003,
+    "saturated_fat_g": 1258,
+    "sodium_mg": 1093,
+    "total_sugars_g": 2000,
+    "trans_fat_g": 1257
+  },
+  "nutrient_units": {
+    "added_sugars_g": "g",
+    "calories_kcal": "kcal",
+    "carbohydrates_g": "g",
+    "cholesterol_mg": "mg",
+    "fat_g": "g",
+    "fiber_g": "g",
+    "protein_g": "g",
+    "saturated_fat_g": "g",
+    "sodium_mg": "mg",
+    "total_sugars_g": "g",
+    "trans_fat_g": "g"
   },
   "raw_sha256": {
     "1118973": "bf8f5476aa4e7ba2dd061922587d0892bcbc3aa6d218c8294bd94e0920d3d307",
@@ -64,9 +89,9 @@
   },
   "record_count": 36,
   "retrieval_date": "2026-10-10",
-  "schema_version": 1,
+  "schema_version": 2,
   "selection_sha256": "6aea26f29f9f664c20ba35e20acb7889b0ba0786ceaa6e1858979bb0ec9f048e",
-  "sha256": "ec3fb0560e26d5b5ac6351bcf55bd9d6c75298ef6641dd39360c8d180abea106",
+  "sha256": "cb44d2b2e1b112c2caf01a399f30b953dacc5562de0c8f7d48804103baef11f2",
   "source": "USDA FoodData Central",
   "sources": [
     {

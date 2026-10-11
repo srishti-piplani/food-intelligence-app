@@ -9,7 +9,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from cece.data_access import DATA_DIR, NUTRIENTS, load_foods, normalize_record, validate_foods
+from cece.data_access import DATA_DIR, ALL_NUTRIENTS, load_foods, normalize_record, validate_foods
 from scripts.prepare_dataset import prepare
 
 
@@ -24,7 +24,7 @@ class DatasetTests(unittest.TestCase):
             raw_path = DATA_DIR / row["raw_record"]
             self.assertEqual(hashlib.sha256(raw_path.read_bytes()).hexdigest(), row["raw_sha256"])
             original = normalize_record(json.loads(raw_path.read_text()), row["source_archive"])
-            for name in NUTRIENTS:
+            for name in ALL_NUTRIENTS:
                 if original[name] is None:
                     self.assertTrue(pd.isna(row[name]))
                 else:

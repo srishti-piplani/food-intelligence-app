@@ -1,0 +1,155 @@
+{
+  "tofu": {
+    "path": "assets/foods/tofu.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "edamame": {
+    "path": "assets/foods/edamame.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "grains": {
+    "path": "assets/foods/grains.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "beans": {
+    "path": "assets/foods/beans.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "yogurt": {
+    "path": "assets/foods/yogurt.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "spinach": {
+    "path": "assets/foods/spinach.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "broccoli": {
+    "path": "assets/foods/broccoli.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "carrot": {
+    "path": "assets/foods/carrot.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "tomato": {
+    "path": "assets/foods/tomato.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "apple": {
+    "path": "assets/foods/apple.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "banana": {
+    "path": "assets/foods/banana.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "avocado": {
+    "path": "assets/foods/avocado.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "egg": {
+    "path": "assets/foods/egg.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "milk": {
+    "path": "assets/foods/milk.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "oil": {
+    "path": "assets/foods/oil.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "sweet-potato": {
+    "path": "assets/foods/sweet-potato.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  },
+  "product-placeholder": {
+    "path": "assets/foods/product-placeholder.svg",
+    "creator": "CeCe project contributors",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "Original vector illustration authored for this project",
+    "representative": true,
+    "product_image": false
+  }
+}

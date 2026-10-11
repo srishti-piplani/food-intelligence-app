@@ -14,10 +14,19 @@ NUTRIENTS = {
     "fat_g": (1004, "g", 100),
     "fiber_g": (1079, "g", 100),
 }
+DETAIL_NUTRIENTS = {
+    "total_sugars_g": (2000, "g", 100),
+    "added_sugars_g": (1235, "g", 100),
+    "saturated_fat_g": (1258, "g", 100),
+    "trans_fat_g": (1257, "g", 100),
+    "sodium_mg": (1093, "mg", 100000),
+    "cholesterol_mg": (1253, "mg", 100000),
+}
+ALL_NUTRIENTS = {**NUTRIENTS, **DETAIL_NUTRIENTS}
 REQUIRED = {
     "food_id", "description", "brand", "fdc_id", "data_type", "basis_g",
     "source_url", "source_archive", "raw_record", "raw_sha256",
-    *NUTRIENTS, *(f"{name}_missing" for name in NUTRIENTS),
+    *ALL_NUTRIENTS, *(f"{name}_missing" for name in ALL_NUTRIENTS),
 }
 
 
@@ -36,7 +45,7 @@ def normalize_record(record: dict, source_archive: str) -> dict:
         "source_url": f"https://fdc.nal.usda.gov/food-details/{fdc_id}/nutrients",
         "source_archive": source_archive, "raw_record": f"raw/{fdc_id}.json",
     }
-    for name, (nutrient_id, unit, _) in NUTRIENTS.items():
+    for name, (nutrient_id, unit, _) in ALL_NUTRIENTS.items():
         matches = [n for n in record["foodNutrients"] if n["nutrient"]["id"] == nutrient_id]
         if len(matches) > 1:
             raise ValueError(f"Ambiguous nutrient {nutrient_id}")
@@ -68,7 +77,7 @@ def validate_foods(frame: pd.DataFrame) -> None:
     for column in ("description", "source_url", "source_archive", "raw_record", "raw_sha256"):
         if frame[column].isna().any() or frame[column].astype(str).str.strip().eq("").any():
             raise ValueError(f"Missing provenance: {column}")
-    for name, (_, _, maximum) in NUTRIENTS.items():
+    for name, (_, _, maximum) in ALL_NUTRIENTS.items():
         values = pd.to_numeric(frame[name], errors="coerce")
         if (values.isna() & frame[name].notna()).any():
             raise ValueError(f"Non-numeric {name}")
@@ -90,3 +99,15 @@ def load_foods(data_dir: Path = DATA_DIR) -> pd.DataFrame:
     if len(frame) != manifest["record_count"]:
         raise ValueError("Manifest record count mismatch")
     return frame
+
+
+def search_foods(frame: pd.DataFrame, query: str) -> pd.DataFrame:
+    """Match every whitespace-separated term literally across name and brand.
+
+    Word order is flexible (e.g. 'cooked lentils'). Empty input browses all foods.
+    """
+    text = frame.description.fillna("").str.casefold() + " " + frame.brand.fillna("").str.casefold()
+    matches = pd.Series(True, index=frame.index)
+    for term in query.casefold().split():
+        matches &= text.str.contains(term, regex=False)
+    return frame.loc[matches].copy()

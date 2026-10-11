@@ -1,46 +1,131 @@
-/* Local styles: native Streamlit controls retain keyboard and label behavior. */
-.stApp { background: radial-gradient(ellipse at top right, #ffead9, transparent 55%), #fcf9f4; }
-.block-container { max-width: 1500px; padding: 1.5rem 2rem 3rem; }
-[data-testid="stSidebar"] { background: linear-gradient(165deg, #f3d7c7, #eef3e8 65%, #faf8ef); }
-h1 { font-size: 1rem !important; font-weight: 500 !important; letter-spacing: .05em; color: #52645f; }
-h2, h3 { letter-spacing: -.035em; color: #193737; }
-.brand { color: #f7755c; font: italic bold 48px Georgia, serif; line-height: 1; }
+/* CeCe design tokens: authored keys and semantic attributes, no generated classes. */
+:root {
+  --cece-cream: #FFF5E9;
+  --cece-peach: #FFDEC9;
+  --cece-white: #FFFFFF;
+  --cece-coral: #FF7059;
+  --cece-forest: #23463D;
+  --cece-muted: #53665E;
+  --cece-border: #EADFD5;
+  --cece-radius: 16px;
+  --cece-space: 8px;
+  --cece-shadow: 0 4px 16px #66442E09;
+}
+.stApp {
+  background-image: url("__FOOD_PATTERN_URL__"), radial-gradient(ellipse at top right, #FFE3CB, transparent 65%), linear-gradient(135deg, var(--cece-cream) 25%, var(--cece-peach));
+  background-size: 360px 360px, auto, auto;
+  color: var(--cece-forest); font: 16px/1.5 Arial, sans-serif;
+}
+.block-container { max-width: 1500px; padding: 24px 32px; background: #FFF8F2DB; border-radius: 24px; }
+.stApp input, .stApp button, .stApp label, .stApp h1, .stApp h2, .stApp h3,
+.stApp p:not(.handwritten):not(.quote):not(.sidebar-note), .stApp table { font-family: Arial, sans-serif; }
+.stApp h1 { font-size: 32px !important; font-weight: 750 !important; letter-spacing: -.035em; }
+.stApp h2 { font-size: 24px; color: var(--cece-forest); letter-spacing: -.025em; }
+.stApp h3 { font-size: 22px; color: var(--cece-forest); }
+.stApp p, .stApp input, .stApp label, .stApp table { font-size: 16px; }
+.stApp button p { font-size: 15px; }
+[data-testid="stCaptionContainer"] p { font-size: 14px; color: var(--cece-muted); }
+[data-testid="stMetricLabel"] p { font-size: 16px; font-weight: 600; }
+[data-testid="stMetricValue"] { font-size: 30px; line-height: 1.2; color: var(--cece-forest); }
+button { border-radius: 14px !important; transition: background .15s ease, box-shadow .15s ease; }
+button:hover { box-shadow: 0 3px 10px #68493910; }
+button:focus-visible { outline: 3px solid var(--cece-forest) !important; outline-offset: 3px; }
+[data-testid="stExpander"] { background: #FFFFFFB8; border-radius: 14px; border-color: var(--cece-border); }
+
+/* Native icon navigation retains button semantics and Streamlit's mobile sidebar. */
+[data-testid="stSidebar"] { background: linear-gradient(165deg, #F3D7C7, #EEF3E8 65%, #FAF8EF); }
+.brand { color: #F7755C; font: italic bold 48px Georgia, serif; line-height: 1; }
 .brand-subtitle { margin-top: 8px; }
-.handwritten { font: italic 27px 'Segoe Print', 'Bradley Hand', cursive; color: #28564b; }
+.st-key-sidebar_navigation { gap: 4px; }
+.st-key-sidebar_navigation [class*="st-key-nav_row_"],
+.st-key-sidebar_navigation [class*="st-key-nav_active_"] { border-radius: 14px; padding: 0 8px; box-sizing: border-box; }
+.st-key-sidebar_navigation [class*="st-key-nav_active_"] { background: #FFE4D7; box-shadow: inset 3px 0 #E85D43; }
+.st-key-sidebar_navigation [data-testid="stHorizontalBlock"] {
+  display: grid; grid-template-columns: minmax(0, 1fr) 42px;
+  align-items: center; gap: 4px; min-height: 44px;
+}
+.st-key-sidebar_navigation [data-testid="stColumn"] { min-width: 0; width: 100%; }
+.st-key-sidebar_navigation button {
+  height: 44px; min-height: 44px; padding: 0;
+  border: 1px solid transparent; box-sizing: border-box; text-align: left;
+}
+/* Keep native icon/text centering; only change horizontal content placement. */
+.st-key-sidebar_navigation button > div:has(> span[data-has-shortcut]),
+.st-key-sidebar_navigation button span[data-has-shortcut] { justify-content: flex-start; }
+.st-key-sidebar_navigation button p { font-size: 16px; white-space: nowrap; text-align: left; }
+.st-key-sidebar_navigation .nav-badge-slot {
+  display: flex; align-items: center; justify-content: flex-end; height: 44px; width: 42px;
+}
+.st-key-sidebar_navigation .nav-soon-empty { visibility: hidden; }
+.st-key-sidebar_navigation button[kind="primary"] { background: transparent; color: var(--cece-forest); border-color: transparent; font-weight: 700; }
+.st-key-sidebar_navigation [class*="st-key-nav_row_"]:hover { background: #FFF1E7; }
+.st-key-sidebar_navigation .nav-soon { display: inline-block; box-sizing: border-box; max-width: 100%; white-space: nowrap; font: 600 13px/1.4 Arial, sans-serif; padding: 2px 4px; border-radius: 6px; color: #5B685F; background: #F1EEE5; }
+.sidebar-note { margin: 24px 0 16px; border-radius: var(--cece-radius); padding: 24px; background: #F4F8ECB3; font: italic 24px/1.5 Georgia, serif; }
+.sidebar-note span, .quote span { color: #E85D43; }
+
+/* Existing CeCe homepage artwork and expressive branding. */
+.handwritten { font: italic 27px 'Segoe Print', 'Bradley Hand', cursive; color: #28564B; }
 .greeting { font-size: 42px; margin: 0; }
-.hero-heading { font-size: clamp(36px, 4vw, 62px); font-weight: 850; line-height: 1.08; margin: 0; }
-.hero-heading span { color: #fa735b; }
-.hero-copy { font-size: 21px; line-height: 1.5; margin: 20px 0 6px; }
-.tagline { font-size: 25px; margin-bottom: 8px; }
-.st-key-hero { padding: 24px; border-radius: 26px; background: linear-gradient(110deg, #fffdf8, #ffead9); margin-bottom: 24px; }
-.st-key-hero img { border-radius: 26px; }
-.st-key-hero input { min-height: 52px; }
-button { border-radius: 16px !important; transition: transform .15s ease, box-shadow .15s ease; }
-button:hover { transform: translateY(-2px); box-shadow: 0 5px 14px #68493914; }
-button:focus-visible { outline: 3px solid #315b4d !important; outline-offset: 3px; }
-.st-key-hero button[kind="secondary"] { background: #ffeadf; color: #813c2c; border-color: transparent; }
-.st-key-feature_cards [data-testid="stVerticalBlockBorderWrapper"] { border-radius: 22px; background: #fffdfb; box-shadow: 0 8px 24px #6849390a; overflow: hidden; }
-.st-key-feature_cards img { border-radius: 16px; }
-.st-key-feature_cards h3 { font-size: 20px; }
-.st-key-feature_cards p { font-size: 14px; }
-.st-key-feature_cards button { background: #fff0e8; border-color: #f3d8c9; }
+.hero-heading { font-size: clamp(32px, 3.5vw, 48px); font-weight: 850; line-height: 1.08; margin: 0; }
+.hero-heading span { color: #FA735B; }
+.hero-copy { font-size: 21px; line-height: 1.5; margin: 16px 0 8px; }
+.tagline { font: 800 clamp(30px, 3.4vw, 44px) Arial, sans-serif; color: #E85D43; margin: 16px 0 0; letter-spacing: -.04em; }
+.st-key-hero { padding: 16px 24px; border-radius: 24px; background: linear-gradient(110deg, #FFFDF8, #FFEAD9); margin-bottom: 16px; }
+.st-key-hero .hero-heading { font-size: clamp(32px, 3.5vw, 48px); }
+.st-key-hero img { max-height: 270px; object-fit: contain; border-radius: 24px; }
 .journey { text-align: right; font-size: 22px; }
-.quote { min-height: 125px; border-radius: 20px; padding: 24px; font: italic 20px Georgia, serif; line-height: 1.5; margin: 24px 0; }
-.quote span, .sidebar-note span { color: #f7755c; }
-.green { background: #edf3e5; }
-.cream { background: #f0f4eb; }
-.peach { background: #fce8db; }
-.sidebar-note { margin: 45px 0 20px; border-radius: 25px; padding: 28px 20px; background: #f4f8ecb3; font: italic 26px Georgia, serif; line-height: 1.5; }
-.st-key-coming_soon { background: #fff4e8; padding: 25px; border-radius: 24px; }
+.quote { min-height: 125px; border-radius: var(--cece-radius); padding: 24px; font: italic 20px/1.5 Georgia, serif; margin: 24px 0; }
+.green { background: #EDF3E5; }
+.cream { background: #F0F4EB; }
+.peach { background: #FCE8DB; }
+.st-key-feature_cards [data-testid="stVerticalBlockBorderWrapper"], .st-key-coming_soon {
+  background: var(--cece-white); border-radius: var(--cece-radius); box-shadow: var(--cece-shadow); padding: 16px;
+}
+.st-key-feature_cards img { border-radius: 14px; }
+.st-key-feature_cards h3 { font-size: 20px; }
+.st-key-feature_cards button { background: #FFF0E8; border-color: #F3D8C9; }
+
+/* Shared discovery, nutrition, comparison and insight surfaces. */
+.st-key-food_search_bar, .st-key-nutrition_panel, .st-key-comparison_area,
+[class*="st-key-result_"], .st-key-selected_result, [class*="st-key-comparison_card_"], [class*="st-key-insight_"] {
+  background: var(--cece-white); border: 1px solid var(--cece-border);
+  border-radius: var(--cece-radius); box-shadow: var(--cece-shadow); padding: 16px;
+}
+.st-key-food_search_bar { margin-bottom: 8px; }
+.st-key-food_search_bar input { min-height: 56px; font-size: 16px; }
+.st-key-food_search_bar button[kind="secondary"] { background: #FFEADF; border-color: transparent; color: #813C2C; }
+.st-key-explorer_navigation { background: #FFF3E8; border-radius: var(--cece-radius); padding: 8px 16px; margin-bottom: 16px; }
+.st-key-explorer_navigation label { font-size: 16px; font-weight: 700; }
+[class*="st-key-result_"]:hover { border-color: #E7BAA8; box-shadow: 0 4px 16px #66442E10; }
+.st-key-selected_result { background: #FFF3EC; border-color: #DE967F; box-shadow: inset 3px 0 #E85D43; }
+.st-key-discovery_results img, .st-key-nutrition_panel img, [class*="st-key-comparison_card_"] img { border-radius: 14px; }
+.st-key-discovery_results strong, .st-key-nutrition_panel strong, [class*="st-key-comparison_card_"] strong { font-size: 18px; }
+.st-key-primary_calories { background: #FFF0E6; padding: 16px; border-radius: 14px; }
+.st-key-primary_calories [data-testid="stMetricValue"] { font-size: 36px; color: #B44733; }
+.st-key-comparison_added button { background: #EAF2E8; color: #315B4D; border-color: #BCD1BC; opacity: 1; }
+[class*="st-key-comparison_card_"] img { max-height: 144px; object-fit: cover; }
+[class*="st-key-comparison_card_"] [data-testid="stMetricValue"] { font-size: 26px; }
+.st-key-comparison_area { margin-top: 16px; }
+[class*="st-key-insight_"] { border-top: 3px solid #BCD1BC; }
+.st-key-insight_0 { border-top-color: #EDAA96; }
+.st-key-insight_3 { border-top-color: #C2B4D7; }
+[class*="st-key-insight_"] strong { font-size: 18px; }
+[class*="st-key-insight_"] [data-testid="stMetricValue"] { font-size: 32px; }
+
 @media (max-width: 900px) {
-  .block-container { padding: 1rem; }
+  .block-container { padding: 16px; }
   .st-key-hero { padding: 16px; }
-  .hero-heading { font-size: 38px; }
   .greeting { font-size: 30px; }
   .hero-copy { font-size: 18px; }
   .journey { text-align: left; }
 }
-@media (prefers-reduced-motion: reduce) {
-  button { transition: none; }
-  button:hover { transform: none; }
+@media (max-width: 700px) {
+  .stApp h1 { font-size: 30px !important; }
+  .st-key-food_search_bar, .st-key-comparison_area { padding: 8px; }
+  .st-key-discovery_results { max-height: 450px; }
+  .st-key-discovery_results [data-testid="stHorizontalBlock"] { flex-wrap: wrap; }
+  .st-key-discovery_results [data-testid="stColumn"] { min-width: 120px; flex: 1 1 auto; }
+  .st-key-discovery_results img { min-width: 56px; }
+  [class*="st-key-comparison_card_"], [class*="st-key-insight_"] { min-width: 0; }
 }
+@media (prefers-reduced-motion: reduce) { button { transition: none; } }
