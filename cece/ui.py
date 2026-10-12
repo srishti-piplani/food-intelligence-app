@@ -158,7 +158,7 @@ def render_app() -> None:
             "Dietary status will distinguish confirmed compatibility, known conflict, and unknown. Missing allergen or gluten information never proves safety."
         )
         st.caption(
-            "Nutrition comes from a curated 36-food USDA snapshot. Dietary safety classifications and AI assistance are not implemented."
+            "Nutrition comes from a curated 36-food USDA snapshot. CeCe's Take provides optional AI comparison explanations; dietary safety classifications are not implemented."
         )
 
 

@@ -11,6 +11,7 @@ from cece.charts import comparison_chart, PALETTE
 from cece.explorer_state import clear_selection, select_food, clear_search, reset_filters, remove_comparison, set_view, add_comparison
 
 from cece.presentation import nutrient_text
+from cece.ai_ui import render_ceces_take
 
 DETAIL_LABELS = {"total_sugars_g": "Total sugars", "added_sugars_g": "Added sugars", "saturated_fat_g": "Saturated fat", "trans_fat_g": "Trans fat", "sodium_mg": "Sodium", "cholesterol_mg": "Cholesterol"}
 
@@ -208,6 +209,7 @@ def render_explorer(render_search) -> None:
 def _render_comparison(indexed: dict) -> None:
     ids = list(st.session_state.get("compare_foods", []))
     labels = comparison_labels([indexed[i] for i in ids])
+    take_slot = st.container()  # Rendered first, populated with the current snapshot below.
     add, clear = st.columns([3, 1])
     add.button("← Explore foods · add another", on_click=_open_explore)
     clear.button("Clear Comparison", key="clear_comparison", on_click=_remove, width="stretch", type="primary", disabled=not ids)
@@ -237,6 +239,8 @@ def _render_comparison(indexed: dict) -> None:
     except ValueError:
         st.warning("Please enter finite, nonnegative portions.")
         return
+    with take_slot:
+        render_ceces_take([indexed[i] for i in ids], snapshot, portions, mode)
     for food_id, values in zip(ids, snapshot):
         food = indexed[food_id]
         row = {"Food": labels[food_id], "Description": food['description'], "Portion (g)": values['portion_g'], **{LABELS[n]: values[n] for n in NUTRIENTS}}

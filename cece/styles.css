@@ -129,3 +129,12 @@ button:focus-visible { outline: 3px solid var(--cece-forest) !important; outline
   [class*="st-key-comparison_card_"], [class*="st-key-insight_"] { min-width: 0; }
 }
 @media (prefers-reduced-motion: reduce) { button { transition: none; } }
+
+/* Optional comparison recommendation card; existing component styles unchanged. */
+.st-key-cece_take {
+  background: linear-gradient(120deg, #FFF9F0, #FFECE1);
+  border: 1px solid #EECBB9; border-radius: 16px; padding: 16px;
+  box-shadow: var(--cece-shadow); margin-bottom: 16px;
+}
+.st-key-cece_take h3 { color: var(--cece-forest); margin-bottom: 0; }
+.st-key-cece_take_response { background: #F3F7EE; border-radius: 14px; padding: 16px; }
