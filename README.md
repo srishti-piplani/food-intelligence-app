@@ -1,147 +1,120 @@
-# CeCe — Your Food Bestie
+# CeCe — Your Food Bestie 🍑
 
-**Hungry? Ask CeCe.**
+### Hungry? Ask CeCe.
 
-CeCe is a friendly food companion that helps you explore nutrition, compare foods,
-and decide what fits your next meal. It brings trustworthy food information and
-practical explanations together in one bright, approachable experience.
+CeCe is your personal food companion, designed to make everyday food decisions simpler, smarter, and more enjoyable.
 
-![CeCe homepage with mascot, food search, navigation, and feature cards](assets/screenshots/cece-homepage.png)
+Whether you're wondering what to eat, comparing nutrition labels, trying to meet your protein goals, navigating dietary restrictions, or looking for a restaurant that fits your preferences, CeCe aims to bring everything together in one friendly place.
 
-*The current homepage. Food Explorer is available; planned modules are marked Soon.*
+**The vision is simple: less time figuring out food, more time enjoying it.**
 
-## Why CeCe?
+![CeCe homepage with mascot, food search, sidebar navigation, and feature cards](assets/screenshots/cece-homepage.png)
 
-“What should I eat?” can turn into a lot of searching, label reading, and guesswork.
-CeCe makes it easier to understand your options, adjust portions, and see the
-trade-offs—without losing sight of the enjoyment of food.
+## 🌱 The Vision
 
-The vision is a complete food companion: discover ingredients and products,
-understand meals, find places to eat, make use of your pantry, and explore food
-traditions with support for your preferences and needs.
+Finding the right food isn't always easy. Nutrition information is scattered, dietary needs vary, and deciding what to eat often involves switching between multiple apps, websites, and search results.
 
-## What you can do today
+CeCe is being built as an all-in-one food assistant that understands your preferences and helps you make informed choices.
 
-- **Explore foods:** search a local catalog of **36 curated USDA records**, including
-  generic foods and branded products. Filter by food type and try search suggestions.
-- **Understand nutrition:** select a food, adjust its portion in grams, and view
-  calories, protein, carbohydrates, fat, fiber, and additional nutrient details.
-- **Compare your options:** compare up to three foods per 100 g or by your selected
-  portions, with interactive charts and clear, factual insights.
-- **Hear CeCe's Take ✨:** choose A balanced meal, More protein, More fiber, or Fewer
-  calories and ask for a friendly explanation grounded in your selected foods.
-- **Check the source:** open original USDA descriptions, FoodData Central IDs,
-  record links, and image attribution.
+The long-term vision includes:
 
-## CeCe's Take ✨
+- **Food Explorer:** Discover nutrition information for everyday ingredients and branded products, with portion-based comparisons.
+- **Personal Food Profile:** Save dietary preferences, allergies, restrictions, and nutrition goals.
+- **Meal Builder:** Plan individual meals or entire days around your preferences, goals, and what you've already eaten.
+- **Restaurant Finder:** Discover places and menu options that fit your cuisine preferences and dietary needs.
+- **Smart Pantry:** Turn ingredients you already have into meal ideas and reduce food waste.
+- **Festival Foods:** Discover traditional dishes, dietary-friendly recipe adaptations, and places to find them.
+- **AI Food Assistant:** Ask CeCe what to eat and receive context-aware suggestions.
 
-Not sure what to choose? Ask your food bestie!
+The goal is to make CeCe a food bestie you can turn to every day. Beyond the food exploration, comparisons, and CeCe's Take described below, these capabilities are planned.
 
-The card sits at the top of Compare Foods. Add at least two foods, choose your goal,
-and click **Ask CeCe ✨**. The OpenAI-powered explanation uses the same USDA
-nutrition values and portions shown in the comparison, with source links beneath
-its answer. Meal pairings are general suggestions, not extra verified nutrition facts.
+## ✨ What CeCe Can Do Today
 
-Recommendations are generated only when you ask. Changing foods, portions, or your
-goal marks the previous take outdated so you can request a fresh explanation.
-Food search and nutrition comparisons work without an OpenAI API key.
+The first version focuses on helping users **explore, understand, and compare foods**.
 
-## The food companion we're building
+### 🔎 Explore Foods
 
-| Module | Vision | Status |
-| --- | --- | --- |
-| Food Explorer | Discover ingredients and products, understand nutrition, and compare options. | Available with a small catalog; broader coverage planned |
-| Personal Food Profile | Bring together preferences, dietary needs, goals, and favorite cuisines. | Planned |
-| Meal Builder | Customize meals and portions around your goals. | Planned |
-| Restaurant Finder | Discover places and menu options that suit your preferences. | Planned |
-| Pantry | Find meal ideas using ingredients you have. | Planned |
-| Festival Foods | Explore traditional dishes and suitable adaptations. | Planned |
-| AI Food Assistant | Get broader conversational support for food decisions. | Planned |
+Search a curated catalog of 36 USDA food records, including everyday ingredients and branded products.
 
-CeCe's Take is available today; the broader AI Food Assistant and other planned
-modules are not yet functional.
+- View calories, protein, carbohydrates, fat, fiber, and additional nutrients.
+- Adjust portions to see how nutrition changes.
+- Explore representative food photographs and preparation information where available.
+- See the USDA source behind each food's nutrition values.
 
-## Built with
+### 📊 Compare Foods
 
-**Python · Streamlit · pandas · Plotly · OpenAI Responses API**
+Compare up to three foods side by side.
 
-Food data and images are stored locally. OpenAI is used only for optional
-recommendation requests. See the [developer walkthrough](docs/developer-walkthrough.md)
-for the architecture and code flow.
+- Compare nutrition per 100 g or by your chosen portions.
+- Explore interactive charts for calories and nutrients.
+- Understand which selected foods provide more protein or fiber, or fewer calories.
+- See useful comparisons such as protein per 100 calories.
 
-## Try CeCe locally
+### ✨ CeCe's Take — AI-Powered Food Insights
 
-The project was tested with Python 3.14.8. On macOS/Linux:
+Not sure which food to choose? Ask CeCe!
 
-```sh
+Select a goal such as **A balanced meal**, **More protein**, **More fiber**, or **Fewer calories**.
+
+CeCe uses OpenAI to explain the nutritional differences between your selected foods and offer practical suggestions.
+
+The recommendations are grounded in the USDA nutrition values calculated by the application, rather than relying on AI to invent nutritional information. Add at least two foods and click **Ask CeCe ✨** to generate a take. If your comparison or goal changes, the previous take is marked outdated until you ask again.
+
+## 🛠️ Built With
+
+**Python · Streamlit · pandas · Plotly · USDA FoodData Central · OpenAI API**
+
+CeCe uses USDA FoodData Central for its initial nutrition catalog and the OpenAI API for goal-based food comparison explanations.
+
+## 🚀 Run CeCe Locally
+
+Use Python 3.11 or newer; the project was tested with Python 3.14.8. Clone the repository and install the dependencies:
+
+```bash
 git clone https://github.com/srishti-piplani/food-intelligence-app.git
 cd food-intelligence-app
-python3.14 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python -m streamlit run app.py
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
-Reuse an existing `.venv` if you already have one. On Windows, create it with
-`py -3.14 -m venv .venv` and use `.venv\Scripts\python.exe` for Python commands.
-Open the local address printed by Streamlit, normally `http://localhost:8501`.
-Package installation needs internet access; browsing the bundled catalog does not.
+Reuse an existing virtual environment if you already have one. These activation commands are for macOS/Linux; on Windows, use `.venv\Scripts\activate` with Command Prompt.
 
-## Optional: enable CeCe's Take
+Start the application:
 
-You need your own **OpenAI API key and API billing/quota**. A ChatGPT subscription
-is not the application's API credential. Create `.streamlit/secrets.toml` locally:
+```bash
+streamlit run app.py
+```
+
+Open the local URL displayed in your terminal.
+
+### Enable CeCe's Take (Optional)
+
+Create `.streamlit/secrets.toml` locally:
 
 ```toml
-OPENAI_API_KEY = "your-key-here"
+OPENAI_API_KEY = "your-api-key"
 OPENAI_MODEL = "gpt-4.1-mini"
 ```
 
-Alternatively, set `OPENAI_API_KEY` and optionally `OPENAI_MODEL` as environment
-variables before starting the app. Environment values take precedence.
-Restart Streamlit after configuring the key.
+An OpenAI API key with separate API billing is required for AI recommendations. Food search, nutrition, and comparisons work without it. Restart Streamlit after configuring credentials.
 
-Keep keys private: `.env` and `.streamlit/secrets.toml` are ignored by Git.
-`.env.example` contains placeholders; copying it does not automatically load
-`.env`. Each Ask click may incur charges—check [OpenAI model pricing](https://developers.openai.com/api/docs/models/gpt-4.1-mini)
-and your API project limits.
+Never commit your API key to GitHub. `.streamlit/secrets.toml` and `.env` are ignored by Git. You can also use environment variables; `.env` is not loaded automatically. Each Ask click may incur API charges.
 
-## Try these journeys
+## 🌍 Data & Transparency
 
-**Explore:** search `Greek yogurt`, select the nonfat record, and change the
-portion to 150 g. Open Detailed Nutrition and USDA Source Details.
+CeCe currently uses a curated local catalog of 36 USDA FoodData Central records. Nutrition values are source-attributed, and missing information is identified as unknown rather than assumed to be zero.
 
-**Compare:** add cooked white rice, brown rice, and quinoa. Open Compare Foods,
-choose More protein, and click Ask CeCe. Try different portions and see how the
-comparison changes.
+The catalog is an initial prototype dataset, not a complete food database or live search service.
 
-## Sources, care, and credits
+Dietary and allergy-safety recommendations are part of the future vision and are not yet implemented. AI suggestions can be wrong, are informational, and are not medical advice.
 
-Nutrition comes from [USDA FoodData Central](https://fdc.nal.usda.gov/). The current
-catalog is a static sample of **30 SR Legacy and 6 Branded records**, retrieved
-October 10, 2026—not live USDA search or comprehensive product coverage.
-Missing nutrients remain **Unknown**, never assumed to be zero.
+Food photographs are representative; branded products use placeholders when exact images are unavailable. Food photography credits and licensing information are available in [CREDITS.md](assets/foods/photos/CREDITS.md). See [artwork and licensing notes](docs/engineering-history.md#artwork-and-licensing) for the mascot and other assets.
 
-CeCe does not classify foods as allergy-safe, gluten-free, vegan, or medically
-suitable. AI explanations can be wrong and are not personalized medical advice;
-check important claims against the displayed sources.
+For technical details, see the [developer walkthrough](docs/developer-walkthrough.md), [dataset documentation](data/README.md), and [script usage](scripts/README.md).
 
-Food photos are representative, not exact preparation or branded product images.
-See [photo credits and licenses](assets/foods/photos/CREDITS.md),
-[food illustration licensing](assets/foods/LICENSE.txt), and
-[artwork and engineering notes](docs/engineering-history.md#artwork-and-licensing).
+---
 
-## For developers
+**CeCe — Your Food Bestie.**
 
-- [Code walkthrough and architecture](docs/developer-walkthrough.md)
-- [USDA schema, sources, and regeneration](data/README.md)
-- [Preparation script usage](scripts/README.md)
-- [Engineering notes and safeguards](docs/engineering-history.md)
-
-Run the automated checks:
-
-```sh
-.venv/bin/python -m unittest discover -s tests -v
-```
-
-API tests use mocked responses and make no paid requests. Browser appearance and
-live recommendation quality still need manual review.
+*Good food fuels a happier you! ♡*
