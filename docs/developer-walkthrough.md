@@ -1,4 +1,4 @@
-# CeCe Week 1 developer walkthrough
+# CeCe developer walkthrough
 
 This guide describes the current implementation. CeCe combines deterministic
 nutrition calculations with an optional generative explanation. It does not
@@ -92,7 +92,7 @@ of records. A future larger system would usually:
 - Link each food to its source batch/version and record location, preserving
   provenance without requiring a separate filesystem object for every row.
 
-These are scaling options only. None are implemented in Week 1, and the current
+These are scaling options only. None are implemented in the current application, and the
 raw-file format was not changed during this documentation review.
 
 ## How portions update when you change a control
@@ -287,7 +287,7 @@ detailed nutrient fields.
 
 ## Reliability and tests
 
-The 58-test suite covers schema, raw-source correspondence, integrity checks,
+The automated test suite covers schema, raw-source correspondence, integrity checks,
 byte-identical rebuilds in the tested environment, portions, missing values,
 labels, imagery, navigation, comparison basis/ties and mocked AI interactions.
 API tests make no paid calls. Invalid keys/access/quota, connection failures,
